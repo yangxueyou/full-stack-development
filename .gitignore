@@ -12,6 +12,7 @@ node_modules
 */dist
 
 # misc
+.DS_Store
 */.DS_Store
 
 # umi
