@@ -18,6 +18,6 @@ mysql> CREATE DATABASE IF NOT EXISTS test_db_char DEFAULT
 
 6. 这样接口的api就可以使用了
 
-## 前端
+## 前端(umi)
 
 1. 进入myapp中，安装依赖，然后npm start
