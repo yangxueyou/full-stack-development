@@ -6,6 +6,7 @@ import axios from 'axios';
 export default function IndexPage() {
 
   const [query, setQuery] = useState('0');
+  const [number, setNumber] = useState(0)
 
   useEffect(() => {
     let ignore = false; // 处理无序的响应
@@ -17,13 +18,15 @@ export default function IndexPage() {
         data: JSON.stringify({
           name: 'axios',
           deadline: '2022-02-02',
-          content: '页面发送21'
+          content: `内容新建${number}`
         })
       });
       if (!ignore) setQuery('0');
     }
     if (query !== '0') {
       fetchData();
+      let count = number + 1
+      setNumber(count)
     }
     return () => { ignore = true; } 
   }, [query]);
@@ -31,7 +34,7 @@ export default function IndexPage() {
   return (
     <div>
       <h1 className={styles.title}>nodejs全栈</h1>
-      <button onClick={() => setQuery(`${Math.random()}`)}>新增</button>
+      <button onClick={() => setQuery('1')}>新增</button>
       <Content query={query}/>
     </div>
   );

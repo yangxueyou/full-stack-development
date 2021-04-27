@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js add axios
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js add react-router-breadcrumbs-hoc
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: ENOENT: no such file or directory, copyfile '/Users/yangxueyou/Library/Caches/Yarn/v6/npm-ansi-regex-5.0.0-388539f55179bf39339c81af30a654d69f87cb75-integrity/node_modules/ansi-regex/index.d.ts' -> '/Users/yangxueyou/Documents/test/sequelize/node_modules/boxen/node_modules/ansi-regex/index.d.ts'
+  Error: ENOENT: no such file or directory, copyfile '/Users/yangxueyou/Library/Caches/Yarn/v6/npm-strip-ansi-6.0.0-0b1571dd7669ccd4f3e06e14ef1eed26225ae532-integrity/node_modules/strip-ansi/index.d.ts' -> '/Users/yangxueyou/Documents/test/full_stack_development/node_modules/boxen/node_modules/strip-ansi/index.d.ts'
 
 npm manifest: 
   {

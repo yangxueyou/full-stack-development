@@ -78,6 +78,8 @@ mysql> use mysql_database; # 选择要用的数据库;
 mysql> show tables; # 查看有哪些表;
 mysql> select * from user; # 查看表里所有的数据;
 mysql> select count(*) from user; # 查看一共多少条数据;
+mysql> drop table table_name; 删除表全部数据和表结构，立刻释放磁盘空间，不管是 Innodb 和 MyISAM;
+mysql> drop database <数据库名>; 删除数据库;
 mysql> quit; # 退出mysql;
 ```
 
@@ -95,6 +97,3 @@ mysql> CREATE DATABASE IF NOT EXISTS test_db_char DEFAULT
 -> CHARACTER SET utf8mb4 
 -> DEFAULT COLLATE utf8mb4_croatian_ci;
 ```
-#### 删除表全部数据和表结构，立刻释放磁盘空间，不管是 Innodb 和 MyISAM;
-mysql> drop table table_name
-
